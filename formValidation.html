@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        input{
+            border-radius: 15px;
+            border: 2px solid black;
+            
+        }
+    </style>
+</head>
+<body style="background-color: blueviolet;">
+    <span style="display: flex; justify-content: center; margin-top: 0; padding: 0;"><h2>Form Validation Using JavaScript</h2></span>
+    <form onsubmit="return validateform()" style="border-radius: 3%; padding: 10px; margin: 0 25rem; border: 2px solid black; display: flex ; align-items: center; justify-content: center; margin-top: 0;" action="practice-todo.html">
+        
+        <table >
+            <tr>
+                <td>
+                   <b>First Name :</b>
+                </td>
+                <td>
+                    <input type="text" id="fname"> <br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                   <b>Last Name :</b>
+                </td>
+                <td>
+                    <input type="text" id="lname"><br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>Address :</b>
+                </td>
+                <td>
+                    <textarea name="" id="address" rows="5" cols="21" placeholder="Enter Your Address Here.."></textarea><br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>Email Id :</b>
+                </td>
+                <td>
+                    <input type="text" id="email"><br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>Password :</b>
+                </td>
+                <td>
+                    <input type="password" id="password"><br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>Confirm Password :</b>
+                </td>
+                <td>
+                    <input type="password" id="confirmPassword"><br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>Gender :</b>
+                </td>
+                <td>
+                   <input  type="radio" name="gender" id="male" value="male">Male
+                   <input type="radio" name="gender" id="female" value="female">Female<br><br>
+                </td>               
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="date"><b>Date Of birth :</b></label>
+                </td>
+                <td>
+                   <input type="date" id="date" onchange="calculateAge()"><br><br>
+                </td>               
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="age"><b>Age :</b></label>
+                </td>
+                <td>
+                   <input type="text" name="age" id="age"><br><br>
+                </td>               
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="zcode"><b>Zip Code :</b></label>
+                </td>
+                <td>
+                   <input type="text" name="zipcode" id="zcode"><br><br>
+                </td>               
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="number"><b>Mobile Number:</b></label>
+                </td>
+                <td>
+                   <input type="text" name="number" id="number"><br><br>
+                </td>               
+            </tr>
+
+            <tr>            
+                <td style="display: flex; justify-content: center;margin-left: 150px;">
+                    <button style=" padding: 8px; border-radius: 10px;"><b>Submit</b></button>
+                </td>               
+            </tr>  
+            
+
+    
+            
+            
+        </table>
+    </form>
+
+
+    <script src="./formValidation.js"></script>
+
+</body>
+</html>
